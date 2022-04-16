@@ -1,0 +1,12 @@
+[
+  {
+    "type": "settings",
+    "url": true,
+    "name": "Settings"
+  },
+  {
+    "type": "welcome",
+    "url": false,
+    "name": "Slap the Bear"
+  }
+]
