@@ -27,6 +27,7 @@ const Bear: React.FC<Props> = ({ left, top, onBearClick, id, ...props }) => {
       <Image 
         width={config.dimensions} 
         height={config.dimensions} 
+        unoptimized
         src="/assets/images/ice_bear_image.png" 
         alt="Ice Bear" />
     </motion.div>

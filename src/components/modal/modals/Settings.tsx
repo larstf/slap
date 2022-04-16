@@ -5,7 +5,6 @@ import axios from 'axios';
 import Toggle from '../../Toggle';
 import GlobalContext from '../../../context/global';
 import Image from 'next/image';
-import Spinner from '../../Spinner';
 import { removeCookie, setCookie } from '../../../lib/cookie';
 
 const Settings: React.FC = () => {
@@ -69,6 +68,7 @@ const Settings: React.FC = () => {
               <Image 
                 width="25px"
                 height="25px"
+                unoptimized
                 className="rounded-full"
                 alt="Discord Avatar"
                 src={global.user.discord.avatar_url}
