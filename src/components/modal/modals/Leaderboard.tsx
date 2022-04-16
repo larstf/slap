@@ -51,7 +51,7 @@ const Leaderboard: React.FC = () => {
   return (
     <div className="p-4 pt-0">
       {leaderboard ? (
-        <div className="flex items-center w-full">
+        <div className="flex items-center w-full flex-col">
           <AnimatePresence>
             {leaderboard.map((l, i) => 
               <motion.div 
