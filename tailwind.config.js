@@ -23,6 +23,12 @@ module.exports = {
         primary: {
           DEFAULT: '#3e3e3e',
         },
+        silver: {
+          DEFAULT: '#aaa9ad',
+        },
+        bronze: {
+          DEFAULT: '#bf8970',
+        },
         brand: {
           DEFAULT: '#257DE9',
           50: '#CCE0FA',

@@ -11,9 +11,9 @@ interface Props {
 const Navbar: React.FC<Props> = ({ hide }) => {
   const global = useContext(GlobalContext);
 
-  const openSettingsModal = () => {
-    global.update({ modal: { open: true, type: 'settings' } });
-    router.replace('/settings');
+  const openModal = (type: string) => {
+    global.update({ modal: { open: true, type } });
+    router.replace(`/${type}`);
   }
 
   return (
@@ -25,9 +25,14 @@ const Navbar: React.FC<Props> = ({ hide }) => {
           </>
         )}
       </div>
-      <div>
+      <div className="flex items-center">
         <div 
-          onClick={() => openSettingsModal()}
+          onClick={() => openModal('leaderboard')}
+          className="w-9 mr-2 h-9 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-200 transition ease-in-out duration-200">
+          <icons.trophy className="fill-gray-800" width="25px" height="25px" />
+        </div>
+        <div 
+          onClick={() => openModal('settings')}
           className="w-9 h-9 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-200 transition ease-in-out duration-200">
           <icons.cog className="fill-gray-800" width="25px" height="25px" />
         </div>

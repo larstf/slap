@@ -8,6 +8,7 @@ import modals from '../../modals.json';
 import { useContext } from 'react';
 import GlobalContext from '../../context/global';
 import WelcomeModal from './modals/Welcome';
+import Leaderboard from './modals/Leaderboard';
 
 const dropIn = {
   hidden: {
@@ -62,6 +63,7 @@ const Modal: React.FC<{ handleClose: any, type: string }> = ({ handleClose, type
         
         {type === 'settings' && <Settings />}
         {type === 'welcome' && <WelcomeModal />}
+        {type === 'leaderboard' && <Leaderboard />}
       </motion.div>
     </Backdrop>
   );

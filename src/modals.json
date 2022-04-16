@@ -5,6 +5,11 @@
     "name": "Settings"
   },
   {
+    "type": "leaderboard",
+    "url": true,
+    "name": "Leaderboard"
+  },
+  {
     "type": "welcome",
     "url": false,
     "name": "Slap the Bear"
