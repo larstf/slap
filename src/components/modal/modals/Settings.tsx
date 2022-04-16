@@ -46,8 +46,7 @@ const Settings: React.FC = () => {
         <>
           <div className="flex w-full justify-between items-center">
             <div>
-              <p className="font-normal text-primary">Sound</p>
-              <p className="text-sm text-secondary">Hallo Welt</p>
+              <p className="font-normal text-primary">Sounds</p>
             </div>
             <div>
               <Toggle 
